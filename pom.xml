@@ -15,7 +15,7 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
-		<docker.image.prefix>nullbeans</docker.image.prefix>
+		<docker.image.prefix>ratepay</docker.image.prefix>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -93,7 +93,7 @@
 			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>dockerfile-maven-plugin</artifactId>
-				<version>1.4.10</version>
+				<version>1.4.12</version>
 				<configuration>
 					<repository>${docker.image.prefix}/${project.artifactId}</repository>
 					<buildArgs>
