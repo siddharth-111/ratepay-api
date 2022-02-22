@@ -1,5 +1,6 @@
 package com.ratepay.challenge.service.serviceImpl;
 
+import com.ratepay.challenge.exception.BadRequestException;
 import com.ratepay.challenge.exception.ResourceNotFoundException;
 import com.ratepay.challenge.entity.Bug;
 import com.ratepay.challenge.repository.BugsRepository;
@@ -8,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.StringUtils;
 
 import java.util.List;
 import java.util.UUID;
